@@ -1,0 +1,148 @@
+header {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: var(--grey);
+    padding: 20px 10px;
+    z-index: 1000;
+}
+  
+header nav a {
+    float: left;
+    color: var(--black);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+header nav a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    background-color: var(--darkgrey);
+    color: var(--black);
+}
+
+header nav a.active {
+    background-color: dodgerblue;
+    color: var(--white);
+}
+
+.header-right {
+float: right;
+}
+
+
+/* header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background: var(--gradient);
+    color: black;
+}
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+.theme-switch {
+display: inline-block;
+position: relative;
+margin: 8px;
+}
+
+.theme-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.switch {
+cursor: pointer;
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+background-color: var(--background-color);
+border-radius: 34px;
+transition: background-color 0.3s;
+overflow: hidden; 
+}
+
+.icon {
+position: absolute;
+width: 20px;
+height: 20px;
+transition: opacity 0.3s;
+}
+
+.dark-mode {
+left: 7px;
+top: 7px;
+opacity: 1;
+}
+
+.light-mode {
+right: 7px;
+top: 7px;
+opacity: 0;
+}
+
+input:checked + .switch {
+background-color: var(--background-color);
+}
+
+input:checked + .switch .dark-mode {
+opacity: 0;
+}
+
+input:checked + .switch .light-mode {
+opacity: 1;
+}
+
+.switch:before {
+content: "";
+position: absolute;
+left: 4px;
+top: 4px;
+width: 26px;
+height: 26px;
+background-color: white;
+border-radius: 50%;
+transition: transform 0.3s;
+}
+
+input:checked + .switch:before {
+transform: translateX(26px);
+}

@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital@0;1&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-family: "Gluten", cursive;
+  font-optical-sizing: auto;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+  -webkit-text-stroke: 2px white;
+}
+
+h2 {
+  font-family: "SUSE", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h3, h4, h5, h6 {
+    font-family: "SUSE", system-ui;
+    font-optical-sizing: auto;
+    /* font-weight: 800;*/
+    font-style: normal;
+}
+
+/* Cores hex que pretendo utilizar futuramente */
+.orange--teal-1-hex { color: #025259; }
+.orange--teal-2-hex { color: #007172; }
+.orange--teal-3-hex { color: #F29325; }
+.orange--teal-4-hex { color: #D94F04; }
+.orange--teal-5-hex { color: #F4E2DE; }

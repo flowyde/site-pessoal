@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- titulo do site -->
+    <title>Meu Site</title>
+
+    <!-- fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital@0;1&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- essenciais -->
+    <link rel="stylesheet" href="./sourceCSS/variables.css">
+    <link rel="stylesheet" href="./sourceCSS/fonts.css">
+    <link rel="stylesheet" href="./sourceCSS/body.css">
+
+    <!-- elementos -->
+    <link rel="stylesheet" href="./sourceCSS/header.css"> 
+    <link rel="stylesheet" href="./sourceCSS/main.css"> 
+    <link rel="stylesheet" href="./sourceCSS/footer.css"> 
+</head>
+<body>
+
+    <button onclick="topFunction()" id="myBttn"></button>
+
+    <header>
+        <nav>
+            <a href="#default" class="logo"><h1>HOME PAGE</h1></a>
+
+            <div class="header-right">
+                <a href="#home" class="active">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#portifolio">Portfólio</a>
+                <a href="#contato">Contato / Redes Sociais</a>
+
+                <div class="theme-switch">
+                    <input type="checkbox" id="theme-toggle"/>
+                    <label for="theme-toggle" class="switch">
+                        <img src="./assets/svg/dark-mode.svg" class="icon dark-mode">
+                        <img src="./assets/svg/light-mode.svg" class="icon light-mode">
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Seções para referência -->
+        <section id="home">
+            <h2>
+                Bem-vindo(a) à Home!
+                <br>
+                Olá, meu nome é yasmin sophia e sou uma aspirante a programadora de 16 anos de idade que quer seguir carreira profissional com computadores, atualmente estou aprendendo javascript
+            </h2>
+        </section>
+
+        <div class="banner"></div>
+
+        <div class="marquee">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+        </div>
+        
+        <div id="content">
+
+            <section id="sobre" data-text="sobre">
+                <p>
+                    Ainda nao possuo experiencia previa com nenhuma tenologia, todavia pretendo com o passar do tempo estudar cada vez mais linguagens como:
+                    <ul>
+                        <li>Javascript</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section id="portifolio" data-text="portifolio">
+                <p>Conteúdo do Portfólio...</p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <section id="contato">
+            <h3>Contato / Redes Sociais</h3>
+            <ul>
+                <li><a href="https://github.com/flowyde" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="https://bsky.app/profile/flowyde.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky</a></li>
+            </ul>
+        </section>
+    </footer>
+    <script src="sourceSCRIPTS/Script_bannerCarrossel.js"></script>
+    <script src="sourceSCRIPTS/Script_themeSwitch.js"></script>
+    <script src="sourceSCRIPTS/Script_h2Custom.js"></script>
+    <script src="sourceSCRIPTS/Script_buttonTop.js"></script>
+</body>
+
+</html>
